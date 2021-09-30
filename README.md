@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [stats preview card](https://omaryasserm.github.io/stats-preview-card/)
 
 ## My process
 
