@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+main {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 450px;
+  width: 1000px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 12px;
+  display: flex;
+}
+.info {
+  width: 540px;
+  padding: 70px 80px 70px 60px;
+}
+.imagebox {
+  background-color: blueviolet;
+  width: 460px;
+  border-radius: 0 12px 12px 0;
+}
+.imagebox > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0.5;
+}
+.text {
+  height: 100%;
+  color: white;
+  font-family: "Inter";
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+}
+.text > h1 {
+  font-size: 35px;
+  font-family: inherit;
+  margin-bottom: 36px;
+}
+.text > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: auto;
+}
+.text > h1 > strong {
+  color: hsl(277, 64%, 61%);
+}
+.stats {
+  display: flex;
+}
+.statsBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: auto;
+}
+.statsBox > b {
+  font-size: 24px;
+}
+.statsBox > span {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: smaller;
+  font-family: "Lexend Deca";
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  main {
+    width: 100%;
+    height: auto;
+    padding: 24px 24px 50px 24px;
+  }
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 100%;
+    height: auto;
+    padding: 70px 24px 30px 24px;
+    text-align: center;
+  }
+
+  .imagebox {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .text > h1 {
+    font-size: 30px;
+  }
+  .stats {
+    flex-direction: column;
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
+  .statsBox {
+    width: auto;
+    margin: 12px auto;
+  }
+}
+@media (min-width: 600px) {
+  .stats {
+    flex-direction: row;
+  }
+  .statsBox {
+    display: flex;
+    margin-right: auto;
+  }
+}
